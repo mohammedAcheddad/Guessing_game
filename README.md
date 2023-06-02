@@ -2,7 +2,6 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Definitions](#definitions)
 - [Server](#server)
 - [Client](#client)
 - [Results](#results)
@@ -10,13 +9,7 @@
 
 # Introduction
 
-This report presents the results obtained from developing an application that utilizes threads to solve a guessing problem. The objective was to create a server that generates a random number and interacts with a client to guess that number using threads for managing connections and message exchanges.
-
-# Definitions
-
-- **Thread**: A thread is a lightweight execution flow that allows tasks to run in parallel. In our application, each client is managed by a separate thread, enabling the server to handle multiple connections simultaneously.
-- **Server**: In this context, the server refers to the application that generates a random number and communicates with the client to provide hints for guessing.
-- **Client**: The client is the application that interacts with the server by inputting values to attempt to guess the generated number.
+The objective of this project was to create a server that generates a random number and interacts with a client to guess that number using threads for managing connections and message exchanges.
 
 # Server
 
@@ -207,6 +200,13 @@ Finally, the client socket is closed using `socket.close()`.
 # Results
 
 The threaded application successfully allows multiple clients to connect to the server simultaneously and guess the random number. Each client is managed by a separate thread, enabling concurrent execution and efficient utilization of system resources.
+Client side:  
+
+![image](https://github.com/mohammedAcheddad/Guessing_game/assets/105829473/20ff1139-b452-42e1-8254-75877451fd9e)
+
+Server side:  
+
+![image](https://github.com/mohammedAcheddad/Guessing_game/assets/105829473/6ad2913a-7d98-4d0d-b57c-7456f105da44)
 
 # Conclusion
 
